@@ -1,0 +1,35 @@
+{
+  "name": "badger-cli",
+  "version": "1.0.0",
+  "description": "Quickly generate metadata badges in terminal",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/tiaanduplessis/badger-cli",
+    "type": "git"
+  },
+  "homepage": "https://github.com/tiaanduplessis/badger-cli",
+  "bugs": "https://github.com/tiaanduplessis/badger-cli",
+  "main": "index.js",
+  "bin": {
+    "badger": "cli.js"
+  },
+  "files": ["cli.js"],
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "standard index.js",
+    "lint:fix": "npm run lint -- --fix",
+    "format": "prettier --print-width 100 --semi false --single-quote --write index.js",
+    "precommit": "npm test",
+    "release": "npm test && git commit -am $npm_package_version && git tag $npm_package_version && git push --tags && npm publish"
+  },
+  "author": "tiaanduplessis <tiaanduplessis@hotmail.com>",
+  "devDependencies": {
+    "husky": "^0.14.1",
+    "prettier": "~1.5.2",
+    "standard": "^10.0.2"
+  },
+  "dependencies": {
+    "badge-studio": "^0.1.1",
+    "get-them-args": "^1.2.2"
+  }
+}

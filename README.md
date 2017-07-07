@@ -3,6 +3,7 @@
 <div align="center">
   <strong>Quickly generate metadata badges in terminal</strong>
 </div>
+<br>
 <div align="center">
   <a href="https://npmjs.org/package/badger-cli">
     <img src="https://img.shields.io/npm/v/badger-cli.svg?style=flat-square" alt="npm package version" />
@@ -102,7 +103,7 @@ $ badger --subject=build --status=passing
 
 Possible arguments:
 
-- **--subject`**
+- **`--subject`**
 - **`--status`**
 - **`--logo`**
 
